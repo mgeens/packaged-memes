@@ -1,0 +1,33 @@
+{
+  "id" : "org.flatpak.Hello",
+  "runtime" : "org.freedesktop.Platform",
+  "runtime-version" : "1.6",
+  "runtime-commit" : "0d47f92d2f31ae772ca997772b72717cb824dabab29959c1988a16fc456c84be",
+  "sdk" : "org.freedesktop.Sdk",
+  "sdk-commit" : "5574941f21c272e53e26ff574a70762dd32ac2fe0548fea29259d8f328ea3a59",
+  "command" : "thug",
+  "modules" : [
+    {
+      "name" : "cpython",
+      "sources" : [
+        {
+          "url" : "https://www.python.org/ftp/python/3.6.5/Python-3.6.5.tar.xz",
+          "sha256" : "f434053ba1b5c8a5cc597e966ead3c5143012af827fd3f0697d21450bb8d87a6",
+          "type" : "archive"
+        }
+      ]
+    },
+    {
+      "name" : "pip-install",
+      "buildsystem" : "simple",
+      "build-options" : {
+        "build-args" : [
+          "--share=network"
+        ]
+      },
+      "build-commands" : [
+        "pip3 install thug-memes"
+      ]
+    }
+  ]
+}
