@@ -1,5 +1,5 @@
 {
-  "id" : "org.flatpak.Hello",
+  "id" : "fi.memes.Thug",
   "runtime" : "org.freedesktop.Platform",
   "runtime-version" : "1.6",
   "runtime-commit" : "0d47f92d2f31ae772ca997772b72717cb824dabab29959c1988a16fc456c84be",
